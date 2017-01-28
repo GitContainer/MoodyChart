@@ -27,6 +27,8 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var RelativeRoughness: UITextField!
     @IBOutlet weak var Results: UILabel!
     
+    @IBOutlet weak var ResultsBox: UIView!
+    
     @IBAction func CalculateButton(_ sender: Any) {
         var Re: Double
         var rel_r: Double
@@ -50,6 +52,11 @@ class FirstViewController: UIViewController {
         
         result = CalculateFrictionFactor(reynoldsNumber: Re, relativeRoughness: rel_r)
         
+        if result == -1 {
+            Results.text = "Transition Flow"
+            return
+        }
+        
         Results.text = String(result)
         
     }
@@ -58,6 +65,8 @@ class FirstViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboardWhenTapped()
+        
+        ResultsBox.layer.cornerRadius = 10
         
     }
     
@@ -76,7 +85,7 @@ class FirstViewController: UIViewController {
         if (reynoldsNumber < 4000)
         {
             //return "transition flow"
-            return 0
+            return -1.0
         }
         
         //(Turbulent Flow)
