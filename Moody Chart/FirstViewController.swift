@@ -20,6 +20,16 @@ extension UIViewController {
     }
 }
 
+extension UIButton {
+    func applyGradient(colors: [UIColor], locations: [NSNumber]?) -> Void {
+        let gradient:CAGradientLayer = CAGradientLayer()
+        gradient.frame = self.bounds
+        gradient.colors = colors.map {$0.cgColor}
+        gradient.locations = locations
+        self.layer.insertSublayer(gradient, at: 0)
+    }
+}
+
 class FirstViewController: UIViewController {
 
     
@@ -28,6 +38,8 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var Results: UILabel!
     @IBOutlet weak var CalculateButtonUI: UIButton!
     @IBOutlet weak var ResultsBox: UIView!
+    
+   
     
     @IBAction func CalculateButton(_ sender: Any) {
         var Re: Double
@@ -67,13 +79,22 @@ class FirstViewController: UIViewController {
         self.hideKeyboardWhenTapped()
         
         ResultsBox.layer.cornerRadius = 10
-        ResultsBox.layer.borderWidth = 0.5
+        ResultsBox.layer.borderWidth = 1.0
+        
+        
+        ReynoldsNumber.layer.borderWidth = 1.0
+        ReynoldsNumber.layer.cornerRadius = 5
+        RelativeRoughness.layer.borderWidth = 1.0
+        RelativeRoughness.layer.cornerRadius = 5
+        
+        //Creating Button Graphics
+        //let gradientColorOne = UIColor.init(red: 0, green: 122, blue: 255, alpha: 1.0)
+        //let gradientColorTwo = UIColor.init(red: 0, green: 122, blue: 255, alpha: 1.0)
+        
+        //CalculateButtonUI.applyGradient(colors: [gradientColorOne, gradientColorTwo] ,locations: [0.0, 1.0])
+        //CalculateButtonUI.clipsToBounds = true
         CalculateButtonUI.layer.cornerRadius = 10
         
-        ReynoldsNumber.layer.borderWidth = 0.5
-        ReynoldsNumber.layer.cornerRadius = 5
-        RelativeRoughness.layer.borderWidth = 0.5
-        RelativeRoughness.layer.cornerRadius = 5
         
     }
     
