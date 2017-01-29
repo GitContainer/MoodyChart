@@ -26,7 +26,7 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var ReynoldsNumber: UITextField!
     @IBOutlet weak var RelativeRoughness: UITextField!
     @IBOutlet weak var Results: UILabel!
-    
+    @IBOutlet weak var CalculateButtonUI: UIButton!
     @IBOutlet weak var ResultsBox: UIView!
     
     @IBAction func CalculateButton(_ sender: Any) {
@@ -67,6 +67,13 @@ class FirstViewController: UIViewController {
         self.hideKeyboardWhenTapped()
         
         ResultsBox.layer.cornerRadius = 10
+        ResultsBox.layer.borderWidth = 0.5
+        CalculateButtonUI.layer.cornerRadius = 10
+        
+        ReynoldsNumber.layer.borderWidth = 0.5
+        ReynoldsNumber.layer.cornerRadius = 5
+        RelativeRoughness.layer.borderWidth = 0.5
+        RelativeRoughness.layer.cornerRadius = 5
         
     }
     

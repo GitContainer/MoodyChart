@@ -108,7 +108,7 @@
 				TargetAttributes = {
 					B7B680FD1E3C1857008D87CA = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 3EAY522AGS;
+						DevelopmentTeam = 56B4AHNVJQ;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -274,11 +274,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3EAY522AGS;
+				DEVELOPMENT_TEAM = 56B4AHNVJQ;
 				INFOPLIST_FILE = "Moody Chart/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "aliandilan.Moody-Chart";
+				PRODUCT_BUNDLE_IDENTIFIER = "thePies.Moody-Chart";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -289,11 +289,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3EAY522AGS;
+				DEVELOPMENT_TEAM = 56B4AHNVJQ;
 				INFOPLIST_FILE = "Moody Chart/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "aliandilan.Moody-Chart";
+				PRODUCT_BUNDLE_IDENTIFIER = "thePies.Moody-Chart";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
