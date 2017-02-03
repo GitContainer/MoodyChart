@@ -122,7 +122,7 @@ class FirstViewController: UIViewController {
         var Dy: Double
         var A: Double
         var B: Double
-        var n: Int
+        let n: Int
         
         A = (relativeRoughness/3.7)
         B = (2.51/reynoldsNumber)
