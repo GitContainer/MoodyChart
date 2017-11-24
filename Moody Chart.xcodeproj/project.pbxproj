@@ -108,8 +108,8 @@
 				TargetAttributes = {
 					B7B680FD1E3C1857008D87CA = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 56B4AHNVJQ;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = 76EX2L85AA;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -274,12 +274,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 56B4AHNVJQ;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Ali Batayneh (76EX2L85AA)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 76EX2L85AA;
 				INFOPLIST_FILE = "Moody Chart/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "thePies.Moody-Chart";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RITSTUDENTS.MoodyChartCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "4f2cb64b-524e-4c91-a2c9-d6446c1eab2c";
+				PROVISIONING_PROFILE_SPECIFIER = "Moody Chart Calculator App Store Distribution";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -289,12 +293,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 56B4AHNVJQ;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Ali Batayneh (76EX2L85AA)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 76EX2L85AA;
 				INFOPLIST_FILE = "Moody Chart/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "thePies.Moody-Chart";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RITSTUDENTS.MoodyChartCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "4f2cb64b-524e-4c91-a2c9-d6446c1eab2c";
+				PROVISIONING_PROFILE_SPECIFIER = "Moody Chart Calculator App Store Distribution";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
